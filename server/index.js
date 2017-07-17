@@ -1,11 +1,16 @@
 const path = require('path')
 const express = require('express')
 const app = express()
-
+const session = require('express-session')
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const db = require('./db')
+const store = new SequelizeStore({ db })
+const PORT = process.env.PORT || 8080
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 
-app
+
+const createApp = () => app
   .use(morgan('dev'))
 
   .use(bodyParser.json())
@@ -23,6 +28,21 @@ app
     res.status(err.status || 500).send(err.message || 'Internal server error.')
   })
 
-  .listen(3000, () => {
-    console.log('Listening on port 3000')
-  })
+
+const syncDb = () =>
+  db.sync()
+
+
+const listenUp = () =>
+  app.listen(3000, () => console.log('Listening on port 3000'))
+
+
+if (require.main === module) {
+  store.sync()
+    .then(syncDb)
+    .then(createApp)
+    .then(listenUp)
+}
+else {
+  createApp(app)
+}
