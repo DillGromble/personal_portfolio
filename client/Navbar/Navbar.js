@@ -4,12 +4,13 @@ import './navbar.scss'
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="navbox">
+      <img className="navbox-brand" src="assets/logo.png" alt="Josh White" />
       <ul>
-        <li>&lt;Home /&gt;</li>
-        <li>&lt;Blog /&gt;</li>
-        <li>&lt;Stuff /&gt;</li>
-        <li>&lt;Boobs /&gt;</li>
+        <li>Blog</li>
+        <li>Algotorials</li>
+        <li>Projects</li>
+        <li>Home</li>
       </ul>
     </nav>
   )
