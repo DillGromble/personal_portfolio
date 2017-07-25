@@ -2,18 +2,16 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Navbar from './Navbar/Navbar'
 
-
-const Main = (props) => {
-  console.log(props)
+const Main = ({ props, children }) => {
   return (
     <div>
       <Navbar />
-      <h1>This is { props.name } homepage!</h1>
+      { children }
     </div>
   )
 }
 
-const mapState = (state) => ({
+const mapState = state => ({
   name: 'Josh'
 })
 
