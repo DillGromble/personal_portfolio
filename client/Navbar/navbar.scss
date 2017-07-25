@@ -5,19 +5,19 @@
 }
 
 .navbox {
-  height: 50px;
+  height: 49px;
   width: 100%;
   background-color: #165d5b;
 }
 
 .navbox-brand {
   float: left;
-  height: 75px;
-  width: 300px;
+  height: 80px;
+  width: 215px;
   margin: 6px 0 0 40px;
+  padding: 0 20px 0 25px;
   background-color: #165d5b;
   border-radius: 0 0 35px 35px;
-  // border: 1px solid black;
 }
 
 .nav-links {
@@ -32,7 +32,9 @@
   padding: 14px 16px;
   display: block;
   text-decoration: none;
-  font: 1em Futura;
+  font-family: 'Cabin', sans-serif;
+  font-size: 17px;
+  font-weight: 900;
   font-variant: small-caps;
   color: black;
   text-align: center;
@@ -48,7 +50,7 @@
   display: block;
   height: 6px;
   width: 0%;
-  background-color: #bf997a;
+  background-color: #b2692a;
 
   position: absolute;
   top: 0;
