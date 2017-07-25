@@ -6,12 +6,10 @@ import store from './store'
 
 import Main from './Main'
 
-
 ReactDOM.render(
-  <Provider store={ store }>
-    <Router history={ browserHistory } >
-      <Route path="/" component={ Main }>
-      </Route>
+  <Provider store={store}>
+    <Router history={browserHistory}>
+      <Route path="/" component={Main} />
     </Router>
   </Provider>,
   document.getElementById('app')
