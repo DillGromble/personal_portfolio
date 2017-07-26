@@ -3,9 +3,9 @@ import './navbar.scss'
 
 const Navbar = () => {
   return (
-    <nav className="navbox">
-      {/*<img className="navbox-brand" src="assets/logo.png" alt="Josh White" />*/}
+    <nav>
       <ul className="nav-links">
+        <li>Contact</li>
         <li>Blog</li>
         <li>Algotorials</li>
         <li>Projects</li>
@@ -16,3 +16,6 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+// change navbar styling to have links in top middle

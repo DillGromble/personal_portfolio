@@ -10,18 +10,6 @@
   background-color: #165d5b;
 }
 
-.navbox-brand {
-  float: left;
-  height: 80px;
-  width: 215px;
-  margin: 6px 0 0 40px;
-  padding: 0 20px 0 25px;
-  background-color: #165d5b;
-  border-radius: 0 0 35px 35px;
-  position: absolute;
-  z-index: 1;
-}
-
 .nav-links {
   margin: 0 15px 0 0;
   list-style-type: none;
@@ -40,9 +28,7 @@
   font-variant: small-caps;
   color: black;
   text-align: center;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  box-shadow: 1px -1px 2px 1px black;
+
   position: relative;
 }
 
