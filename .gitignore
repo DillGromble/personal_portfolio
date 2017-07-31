@@ -1,3 +1,18 @@
 node_modules
 bundle.js
-budle.map.js
+bundle.map.js
+package-lock.json
+npm-debug.log
+
+# repos / submodules
+.git
+.svn
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
