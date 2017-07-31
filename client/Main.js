@@ -2,6 +2,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Navbar from './Navbar/Navbar'
 
+import './index.scss'
+
+
 const Main = ({ props, children }) => {
   return (
     <div>
