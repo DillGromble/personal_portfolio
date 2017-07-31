@@ -4,15 +4,14 @@ import './navbar.scss'
 const Navbar = () => {
   return (
     <nav className="navbox">
-      <img className="navbox-brand" src="assets/logo.png" alt="Josh White" />
-      <ul className="nav-links">
-        <li>Blog</li>
-        <li>Algotorials</li>
-        <li>Projects</li>
-        <li>Home</li>
-      </ul>
+      <div>Home</div>
+      <div>Projects</div>
+      <div>Algotorials</div>
+      <div>Blog</div>
+      <div>Contact</div>
     </nav>
   )
 }
 
 export default Navbar
+

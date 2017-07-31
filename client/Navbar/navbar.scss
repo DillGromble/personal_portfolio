@@ -5,46 +5,27 @@
 }
 
 .navbox {
-  height: 49px;
+  height: 50px;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
   background-color: #165d5b;
 }
 
-.navbox-brand {
-  float: left;
-  height: 80px;
-  width: 215px;
-  margin: 6px 0 0 40px;
-  padding: 0 20px 0 25px;
-  background-color: #165d5b;
-  border-radius: 0 0 35px 35px;
-}
-
-.nav-links {
-  margin: 0 15px 0 0;
-  list-style-type: none;
-  background-color: #165d5b;
-}
-
-.nav-links li {
-  float: right;
-  margin: 0 10px;
+.navbox div {
   padding: 14px 16px;
-  display: block;
-  text-decoration: none;
   font-family: 'Cabin', sans-serif;
   font-size: 17px;
   font-weight: 900;
   font-variant: small-caps;
   color: black;
   text-align: center;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  box-shadow: 1px -1px 2px 1px black;
+  background-color: #165d5b;
   position: relative;
 }
 
-.nav-links li::before {
+.navbox div::before {
   content: '';
 
   display: block;
@@ -59,7 +40,8 @@
   transition: all ease 250ms;
 }
 
-.nav-links li:hover::before {
+
+.navbox div:hover::before {
   width: 100%;
 }
 
