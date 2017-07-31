@@ -4,18 +4,14 @@ import './navbar.scss'
 const Navbar = () => {
   return (
     <nav className="navbox">
-      <ul className="nav-links">
-        <li>Contact</li>
-        <li>Blog</li>
-        <li>Algotorials</li>
-        <li>Projects</li>
-        <li>Home</li>
-      </ul>
+      <div>Home</div>
+      <div>Projects</div>
+      <div>Algotorials</div>
+      <div>Blog</div>
+      <div>Contact</div>
     </nav>
   )
 }
 
 export default Navbar
 
-
-// change navbar styling to have links in top middle

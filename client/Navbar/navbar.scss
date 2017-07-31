@@ -5,33 +5,27 @@
 }
 
 .navbox {
-  height: 49px;
+  height: 50px;
   width: 100%;
-}
-
-.nav-links {
-  margin: 0 15px 0 0;
-  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
   background-color: #165d5b;
 }
 
-.nav-links li {
-  float: right;
-  margin: 0 10px;
+.navbox div {
   padding: 14px 16px;
-  display: block;
-  text-decoration: none;
   font-family: 'Cabin', sans-serif;
   font-size: 17px;
   font-weight: 900;
   font-variant: small-caps;
   color: black;
   text-align: center;
-
+  background-color: #165d5b;
   position: relative;
 }
 
-.nav-links li::before {
+.navbox div::before {
   content: '';
 
   display: block;
@@ -46,7 +40,7 @@
   transition: all ease 250ms;
 }
 
-.nav-links li:hover::before {
+.navbox div:hover::before {
   width: 100%;
 }
 
