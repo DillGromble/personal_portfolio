@@ -13,14 +13,19 @@
   background-color: #165d5b;
 }
 
+.navbox a {
+  text-decoration: none;
+}
+
 .navbox div {
-  padding: 14px 16px;
+  padding: 15px 16px;
   font-family: 'Cabin', sans-serif;
   font-size: 17px;
   font-weight: 900;
   font-variant: small-caps;
   color: black;
   text-align: center;
+  // text-decoration: none;
   background-color: #165d5b;
   position: relative;
 }
