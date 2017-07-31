@@ -3,7 +3,7 @@ import './navbar.scss'
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="navbox">
       <ul className="nav-links">
         <li>Contact</li>
         <li>Blog</li>
