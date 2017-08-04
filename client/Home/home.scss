@@ -1,3 +1,12 @@
+.home-text {
+  position: absolute;
+  font-family: 'Cabin', sans-serif;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 29px;
+}
 
 
 /* splash screen */
@@ -11,6 +20,7 @@
   50% { bottom: 20px; }
   100% { bottom: 0; }
 }
+
 
 .splash-arrow {
   animation: bouncing 1s infinite ease-in-out;
@@ -32,15 +42,6 @@
   box-shadow: inset 0px 0px 330px 210px #177673;
 }
 
-.home-text {
-  position: absolute;
-  font-family: 'Cabin', sans-serif;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 29px;
-}
 
 .splash-text {
   background-color: transparent;
@@ -60,17 +61,31 @@
 /* Techs area */
 
 .techs-container {
+  height: 100vh;
   position: relative;
-  text-align: center;
+  // text-align: center;
 }
 
 .techs-header {
-  margin-top: 1em;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  margin-left: -130px;
 }
 
-// .lang-row {
-//   display: inline;
-// }
+.techs-header :last-child {
+  margin-top: 2em;
+}
+
+.lang-row {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  margin: -100px 0 0 -320px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .techs-logos.js {
   height: 200px;

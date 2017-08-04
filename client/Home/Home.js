@@ -14,11 +14,12 @@ const Home = () => (
     </section>
 
     <section className="techs-container home-text">
-      <h1 className="techs-header">I LOVE coding</h1>
-      <h1>Particularly in:</h1>
+      <div className="techs-header">
+        <h1>I LOVE coding</h1>
+        <h1>Particularly in:</h1>
+      </div>
       <div className="lang-row">
         <img className="techs-logos js" src="assets/html-css-js-logos.png" />
-        <h1>and</h1>
         <img className="techs-logos python" src="assets/python-logo.png" />
       </div>
     </section>
