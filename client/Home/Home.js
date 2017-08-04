@@ -1,19 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router'
+import smoothScroll from '../smoothScroll'
 
 import './home.scss'
 
-const Home = () => (
+const Home = () =>
   <div>
-
     <section className="splash-container">
       <div className="splash-img" />
       <div className="splash-text home-text">
         <h1>Hi, I'm Josh.</h1>
         <h1>I'm a full stack web developer, and problem solver.</h1>
       </div>
-      <Link to="/home#techs">
-        <img className="splash-arrow" src="assets/arrow-down-black.png" />
+      <Link to="/home" onClick={ () => smoothScroll.scrollTo('techs') }>
+        <img
+          className="splash-arrow"
+          src="assets/arrow-down-black.png"
+        />
       </Link>
     </section>
 
@@ -27,8 +30,6 @@ const Home = () => (
         <img className="techs-logos python" src="assets/python-logo.png" />
       </div>
     </section>
-
   </div>
-)
 
 export default Home
