@@ -1,4 +1,3 @@
-
 export default {
   timer: null,
 
@@ -7,7 +6,7 @@ export default {
   },
 
   scrollTo: function(id, callback) {
-    var settings = {
+    const settings = {
       duration: 1000,
       easing: {
         outQuint: function(x, t, b, c, d) {
@@ -15,25 +14,25 @@ export default {
         }
       }
     }
-    var percentage
-    var startTime
-    var node = document.getElementById(id)
-    var nodeTop = node.offsetTop
-    var nodeHeight = node.offsetHeight
-    var body = document.body
-    var html = document.documentElement
-    var height = Math.max(
+    let percentage
+    let startTime
+    const node = document.getElementById(id)
+    const nodeTop = node.offsetTop
+    const nodeHeight = node.offsetHeight
+    const body = document.body
+    const html = document.documentElement
+    const height = Math.max(
       body.scrollHeight,
       body.offsetHeight,
       html.clientHeight,
       html.scrollHeight,
       html.offsetHeight
     )
-    var windowHeight = window.innerHeight
-    var offset = window.pageYOffset
-    var delta = nodeTop - offset
-    var bottomScrollableY = height - windowHeight
-    var targetY =
+    const windowHeight = window.innerHeight
+    const offset = window.pageYOffset
+    const delta = nodeTop - offset
+    const bottomScrollableY = height - windowHeight
+    const targetY =
       bottomScrollableY < delta
         ? bottomScrollableY - (height - nodeTop - nodeHeight + offset)
         : delta
@@ -46,8 +45,8 @@ export default {
     }
 
     function step() {
-      var yScroll
-      var elapsed = Date.now() - startTime
+      let yScroll
+      const elapsed = Date.now() - startTime
 
       if (elapsed > settings.duration) {
         clearTimeout(this.timer)
