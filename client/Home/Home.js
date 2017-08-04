@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router'
+
 import './home.scss'
 
 const Home = () => (
@@ -10,10 +12,12 @@ const Home = () => (
         <h1>Hi, I'm Josh.</h1>
         <h1>I'm a full stack web developer, and problem solver.</h1>
       </div>
-      <img className="splash-arrow" src="assets/arrow-down-black.png" />
+      <Link to="/home#techs">
+        <img className="splash-arrow" src="assets/arrow-down-black.png" />
+      </Link>
     </section>
 
-    <section className="techs-container home-text">
+    <section className="techs-container home-text" id="techs">
       <div className="techs-header">
         <h1>I LOVE coding</h1>
         <h1>Particularly in:</h1>
@@ -28,4 +32,3 @@ const Home = () => (
 )
 
 export default Home
-

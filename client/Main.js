@@ -4,12 +4,11 @@ import Navbar from './Navbar/Navbar'
 
 import './index.scss'
 
-
 const Main = ({ props, children }) => {
   return (
     <div>
       <Navbar />
-      { children }
+      {children}
     </div>
   )
 }
