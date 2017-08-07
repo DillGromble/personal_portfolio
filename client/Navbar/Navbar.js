@@ -22,7 +22,7 @@ const Navbar = () => (
       <div>Blog</div>
     </Link>
 
-    <Link to="/contact">
+    <Link to="/home" onClick={ () => alert('hello!')}>
       <div>Contact</div>
     </Link>
 
