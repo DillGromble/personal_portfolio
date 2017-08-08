@@ -21,11 +21,51 @@
   opacity: 1;
 }
 
-.exit {
+.relative-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.profile-pic {
+  height: 201px;
+  width: 214px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 1px 1px black;
+  margin: 45px 25px 0 65px;
+}
+
+.exit-btn {
   height: 24px;
   width: 24px;
-  float: right;
   margin: 12px;
-
+  position: absolute;
+  top: 0;
+  right: 0;
   cursor: pointer; cursor: hand;
+}
+
+.vert-flex {
+  height: 140px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 80px;
+  right: 130px;
+}
+
+.contact-icon {
+  height: 32px;
+  width: 32px;
+}
+
+.icon-text {
+  img {
+    float: left;
+  }
+  p {
+    margin: 5px 0 0 50px;
+  }
 }
