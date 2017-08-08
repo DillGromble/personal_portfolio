@@ -10,14 +10,18 @@ class Main extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = { visible: false }
+    this.state = { visible: true }
+  }
+
+  toggleContact() {
+    this.setState({ visible: !this.state.visible })
   }
 
   render() {
     return (
       <div>
-        <Navbar />
-        <Contact />
+        <Navbar showContacts={this.toggleContact.bind(this)} />
+        { this.state.visible ? <Contact /> : null }
         { this.props.children }
       </div>
     )
