@@ -22,7 +22,7 @@ class Main extends React.Component {
       <div>
         <Navbar showContact={ this.toggleContact.bind(this) } />
         <Contact
-          visible={ this.state.showContacts ? 'contact-show' : '' }
+          isVisible={ this.state.showContacts ? 'contact-show' : '' }
           exit={ this.toggleContact.bind(this) }
         />
         { this.props.children }

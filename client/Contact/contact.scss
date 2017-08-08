@@ -56,16 +56,32 @@
   right: 130px;
 }
 
+.horizon-flex {
+  width: 70%;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .contact-icon {
   height: 32px;
   width: 32px;
 }
 
-.icon-text {
+.icon-text_side {
+  img { float: left; }
+  p { margin: 5px 0 0 50px; }
+}
+
+.icon-text_bottom {
+  width: 65px;
   img {
-    float: left;
+    display: block;
+    margin: 0 auto;
   }
   p {
-    margin: 5px 0 0 50px;
+    margin-top: 6px;
+    text-align: center;
   }
 }
