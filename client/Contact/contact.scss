@@ -1,11 +1,22 @@
-#contact-popup {
-  position: absolute;
+.contact-popup {
+  position: fixed;
   left: 50%;
   margin-left: -350px;
   top: 50%;
   margin-top: -200px;
   height: 400px;
   width: 700px;
-  background-color: white;
+  background-color: #177673;
+  border: 1px solid black;
+  box-shadow: 3px 3px 10px 0px black;
   z-index: 99999;
+
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contact-show {
+  visibility: visible;
+  opacity: 1;
 }

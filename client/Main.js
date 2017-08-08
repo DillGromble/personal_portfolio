@@ -20,8 +20,8 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <Navbar showContacts={this.toggleContact.bind(this)} />
-        { this.state.visible ? <Contact /> : null }
+        <Navbar showContact={this.toggleContact.bind(this)} />
+        <Contact visible={ this.state.visible ? 'contact-show' : '' } />
         { this.props.children }
       </div>
     )

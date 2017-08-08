@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 
 import './navbar.scss'
 
-const Navbar = ({ showContacts }) => (
+const Navbar = ({ showContact }) => (
   <nav className="navbox">
 
     <Link to="/home">
@@ -22,7 +22,7 @@ const Navbar = ({ showContacts }) => (
       <div>Blog</div>
     </Link>
 
-    <Link to="/home" onClick={ showContacts }>
+    <Link to="/home" onClick={ showContact }>
       <div>Contact</div>
     </Link>
 

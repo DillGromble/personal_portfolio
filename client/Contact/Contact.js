@@ -1,9 +1,8 @@
 import React from 'react'
 import './contact.scss'
 
-module.exports = (props) => {
-  console.log(props)
+module.exports = ({ visible }) => {
   return (
-    <div id="contact-popup" />
+    <div className={`contact-popup ${visible}`} />
   )
 }
