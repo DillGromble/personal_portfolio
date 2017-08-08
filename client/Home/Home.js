@@ -12,12 +12,11 @@ const Home = () =>
         <h1>Hi, I'm Josh.</h1>
         <h1>I'm a full stack web developer, and problem solver.</h1>
       </div>
-      <Link to="/home" onClick={ () => smoothScroll.scrollTo('techs') }>
-        <img
-          className="splash-arrow"
-          src="assets/arrow-down-black.png"
-        />
-      </Link>
+      <img
+        className="splash-arrow"
+        src="assets/arrow-down-black.png"
+        onClick={ () => smoothScroll.scrollTo('techs') }
+      />
     </section>
 
     <section className="techs-container home-text" id="techs">

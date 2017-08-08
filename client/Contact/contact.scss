@@ -1,0 +1,87 @@
+.contact-popup {
+  position: fixed;
+  left: 50%;
+  margin-left: -350px;
+  top: 50%;
+  margin-top: -200px;
+  height: 400px;
+  width: 700px;
+  background-color: #177673;
+  border: 1px solid black;
+  box-shadow: 3px 3px 10px 0px black;
+  z-index: 99999;
+
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contact-show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.relative-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.profile-pic {
+  height: 201px;
+  width: 214px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 1px 1px black;
+  margin: 45px 25px 0 65px;
+}
+
+.exit-btn {
+  height: 24px;
+  width: 24px;
+  margin: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer; cursor: hand;
+}
+
+.vert-flex {
+  height: 140px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 80px;
+  right: 130px;
+}
+
+.horizon-flex {
+  width: 70%;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-icon {
+  height: 32px;
+  width: 32px;
+}
+
+.icon-text_side {
+  img { float: left; }
+  p { margin: 5px 0 0 50px; }
+}
+
+.icon-text_bottom {
+  width: 65px;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  p {
+    margin-top: 6px;
+    text-align: center;
+  }
+}
