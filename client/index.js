@@ -19,11 +19,11 @@ function hashLinkScroll() {
 }
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Router history={browserHistory} onUpdate={hashLinkScroll}>
-      <Route path="/" component={Main}>
+  <Provider store={ store }>
+    <Router history={ browserHistory } onUpdate={ hashLinkScroll }>
+      <Route path="/" component={ Main }>
         <IndexRedirect to="/home" />
-        <Route path="/home" component={Home} />
+        <Route path="/home" component={ Home } />
       </Route>
     </Router>
   </Provider>,
