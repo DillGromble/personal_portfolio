@@ -6,6 +6,13 @@ import store from './store'
 
 import Main from './Main'
 import Home from './Home/Home'
+import AllProjects from './Projects/AllProjects'
+
+import { getAllProjects } from './reducers'
+
+
+const fetchProjects = () => store.dispatch(getAllProjects())
+
 
 function hashLinkScroll() {
   const { hash } = window.location
@@ -24,6 +31,7 @@ ReactDOM.render(
       <Route path="/" component={ Main }>
         <IndexRedirect to="/home" />
         <Route path="/home" component={ Home } />
+        <Route path="/projects" component={ AllProjects } onEnter={ fetchProjects } />
       </Route>
     </Router>
   </Provider>,
