@@ -28,5 +28,9 @@ module.exports = db.define('projects', {
   },
   presentation: {
     type: Sequelize.STRING
+  },
+  img: {
+    type: Sequelize.STRING,
+    allowNull: false
   }
 })
