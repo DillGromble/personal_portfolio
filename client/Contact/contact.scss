@@ -1,3 +1,15 @@
+.disable-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(black, 0.6);
+  z-index: 9999;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
 .contact-popup {
   position: fixed;
   left: 50%;
@@ -10,10 +22,9 @@
   border: 1px solid black;
   box-shadow: 3px 3px 10px 0px black;
   z-index: 99999;
-
+  visibility: hidden;
   transition: 0.3s;
   opacity: 0;
-  visibility: hidden;
 }
 
 .contact-show {
@@ -22,9 +33,9 @@
 }
 
 .relative-container {
+  position: relative;
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .profile-pic {

@@ -13,24 +13,31 @@ class Main extends React.Component {
     this.state = { showContacts: false }
   }
 
+  componentDidUpdate() {
+    const bodyState = this.state.showContacts ? 'hidden' : ''
+    document.body.style.overflow = bodyState
+  }
+
   toggleContact() {
     this.setState({ showContacts: !this.state.showContacts })
   }
 
   render() {
+    const showContacts = this.state.showContacts
+    const toggleContact = this.toggleContact.bind(this)
+
     return (
       <div>
-        <Navbar showContact={ this.toggleContact.bind(this) } />
+        <Navbar toggleContact={ toggleContact } />
         <Contact
-          isVisible={ this.state.showContacts ? 'contact-show' : '' }
-          exit={ this.toggleContact.bind(this) }
+          isVisible={ showContacts ? 'contact-show' : '' }
+          exit={ toggleContact }
         />
         { this.props.children }
       </div>
     )
   }
 }
-
 
 const mapState = state => ({
   name: 'Josh'
