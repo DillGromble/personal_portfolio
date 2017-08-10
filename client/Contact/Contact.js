@@ -3,7 +3,7 @@ import './contact.scss'
 
 module.exports = ({ isVisible, exit }) => {
   return (
-    <div className={`disable-bg ${isVisible}`}>
+    <div className={ `disable-bg ${isVisible}` }>
       <div className={`contact-popup ${isVisible}`}>
         <div className="relative-container">
           <img className="profile-pic" src="assets/Contact/profile-pic.jpg" />

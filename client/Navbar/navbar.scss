@@ -24,6 +24,12 @@
   position: relative;
 }
 
+.nav-contact {
+  cursor: pointer;
+  cursor: hand;
+  user-select: none;
+}
+
 .navbox div::before {
   content: '';
 
