@@ -1,11 +1,15 @@
 import React from 'react'
 import './contact.scss'
 
+import SocialLink from './SocialLink'
+import links from './links'
+
 module.exports = ({ isVisible, exit }) => {
   return (
     <div className={`disable-bg ${isVisible}`}>
       <div className={`contact-popup ${isVisible}`}>
         <div className="relative-container">
+
           <img className="profile-pic" src="assets/Contact/profile-pic.jpg" />
           <img className="exit-btn" src="assets/x-button.png" onClick={ exit } />
 
@@ -24,27 +28,7 @@ module.exports = ({ isVisible, exit }) => {
           </section>
 
           <section className="horizon-flex">
-            <div className="icon-text_bottom">
-              <a href="https://github.com/DillGromble">
-                <img className="contact-icon" src="assets/Contact/github.png" />
-              </a>
-              <p>Github</p>
-            </div>
-            <div className="icon-text_bottom">
-              <a href="assets/Contact/current-resume.pdf">
-                <img
-                  className="contact-icon"
-                  src="assets/Contact/resume-icon.png"
-                />
-              </a>
-              <p>Resume</p>
-            </div>
-            <div className="icon-text_bottom">
-              <a href="https://www.linkedin.com/in/josh-white42/">
-                <img className="contact-icon" src="assets/Contact/linkedin.png" />
-              </a>
-              <p>LinkedIn</p>
-            </div>
+            { links.map(link => <SocialLink {...link} key={link.url} />) }
           </section>
         </div>
       </div>
