@@ -15,10 +15,12 @@ module.exports = ({ isVisible, exit }) => {
 
           <section className="vert-flex">
             <h1>Josh White</h1>
+
             <div className="icon-text_side">
               <img className="contact-icon" src="assets/Contact/phone.png" />
               <p>(615)971-8848</p>
             </div>
+
             <div className="icon-text_side">
               <a href="mailto:whitejosh42@gmail.com">
                 <img className="contact-icon" src="assets/Contact/gmail.png" />
@@ -28,8 +30,9 @@ module.exports = ({ isVisible, exit }) => {
           </section>
 
           <section className="horizon-flex">
-            { links.map(link => <SocialLink {...link} key={link.url} />) }
+            { links.map(link => <SocialLink key={link.link} {...link} />) }
           </section>
+
         </div>
       </div>
     </div>

@@ -1,0 +1,12 @@
+.project-overview {
+  width: 360px;
+  height: 500px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.project-overview > img {
+  width: 100%;
+  height: 42%;
+  vertical-align: top;
+}
