@@ -19,7 +19,7 @@ module.exports = db.define('projects', {
     allowNull: false
   },
   technologies: {
-    type: Sequelize.ARRAY(Sequelize.TEXT),
+    type: Sequelize.ARRAY(Sequelize.STRING),
     allowNull: false
   },
   github_repo: {
@@ -32,5 +32,8 @@ module.exports = db.define('projects', {
   img: {
     type: Sequelize.STRING,
     allowNull: false
+  },
+  deployment: {
+    type: Sequelize.STRING
   }
 })
