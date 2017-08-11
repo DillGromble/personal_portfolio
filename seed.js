@@ -19,7 +19,7 @@ const projects = [
     description: 'Lumber Jack\'s CTS is a top-down real-time online multiplayer game for 4 people. This was a Hackathon project while I was at Fullstack Academy which won the ‘Nerd Cred’ award for most technical problems solved in a short time due to the complications with managing state and latency across the players.',
     technologies: ['Phaser.io', 'Socket.io', 'Express'],
     github_repo: 'https://github.com/DillGromble/LumberJacksCTS',
-    img: 'assets/Projects/lumber-jacks.tiff',
+    img: 'assets/Projects/lumber-jacks.png',
     deployment: 'https://lumber-jacks-cts.herokuapp.com/'
   }, {
     title: 'Grace Shopper',
