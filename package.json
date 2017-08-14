@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack -w & nodemon server/index.js",
     "dev": "nodemon server/index.js",
-    "test": "mocha ./**/*.spec.js --compilers js:babel-register --require babel-polyfill --watch-extensions js,jsx"
+    "test": "mocha ./**/*.spec.js --compilers js:babel-register --require babel-polyfill --watch-extensions js,jsx",
+    "seed": "node seed.js"
   },
   "author": "",
   "license": "ISC",
