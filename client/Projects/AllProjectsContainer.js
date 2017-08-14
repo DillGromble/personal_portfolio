@@ -8,12 +8,14 @@ import AllProjectsComponent from './AllProjectsComponent'
 
 const AllProjectsContainer = (props) => {
   return (
-    <div>
-      {
-        props.allProjects && props.allProjects.map(proj =>
-          <AllProjectsComponent key={ proj.id } { ...proj } />
-        )
-      }
+    <div className="project-grid">
+      <div className="center-track">
+        {
+          props.allProjects && props.allProjects.map(proj =>
+            <AllProjectsComponent key={ proj.id } { ...proj } />
+          )
+        }
+      </div>
     </div>
   )
 }
