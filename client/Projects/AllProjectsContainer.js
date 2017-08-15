@@ -9,6 +9,7 @@ import ProjectPopup from './ProjectPopup'
 
 
 class AllProjectsContainer extends React.Component {
+
   constructor(props) {
     super(props)
     this.state = {
@@ -46,7 +47,7 @@ class AllProjectsContainer extends React.Component {
           }
         </div>
         <ProjectPopup
-          poppedUp={this.state.showPopup ? 'contact-show' : ''}
+          poppedUp={this.state.showPopup ? 'popup-show' : ''}
           exit={ togglePopup }
         />
       </div>
