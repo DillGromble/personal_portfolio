@@ -20,8 +20,8 @@ ReactDOM.render(
         <IndexRedirect to="/home" />
         <Route path="/home" component={ Home } />
         <Route path="/projects"
-          component={AllProjectsContainer}
-          onEnter={fetchProjects}
+          component={ AllProjectsContainer }
+          onEnter={ fetchProjects }
         />
       </Route>
     </Router>
