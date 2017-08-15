@@ -30,11 +30,7 @@ module.exports = ({ isVisible, exit }) => {
           </section>
 
           <section className="horizon-flex">
-<<<<<<< HEAD
             { links.map(link => <SocialLink key={ link.link } { ...link } />) }
-=======
-            { links.map(link => <SocialLink {...link} key={link.url} />) }
->>>>>>> master
           </section>
 
         </div>
