@@ -7,7 +7,7 @@ import links from './links'
 module.exports = ({ isVisible, exit }) => {
   return (
     <div className={ `disable-bg ${isVisible}` }>
-      <div className={`contact-popup ${isVisible}`}>
+      <div className={`popup contact-popup ${isVisible}`}>
         <div className="relative-container">
 
           <img className="profile-pic" src="assets/Contact/profile-pic.jpg" />
@@ -30,7 +30,7 @@ module.exports = ({ isVisible, exit }) => {
           </section>
 
           <section className="horizon-flex">
-            { links.map(link => <SocialLink key={link.link} {...link} />) }
+            { links.map(link => <SocialLink key={ link.link } { ...link } />) }
           </section>
 
         </div>

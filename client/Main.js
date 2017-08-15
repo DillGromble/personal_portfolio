@@ -30,7 +30,7 @@ class Main extends React.Component {
       <div>
         <Navbar toggleContact={ toggleContact } />
         <Contact
-          isVisible={ showContacts ? 'contact-show' : '' }
+          isVisible={ showContacts ? 'popup-show' : '' }
           exit={ toggleContact }
         />
         { this.props.children }
