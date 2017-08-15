@@ -22,9 +22,7 @@ const Navbar = ({ toggleContact }) => (
       <div>Blog</div>
     </Link>
 
-    <Link to="/home" onClick={ toggleContact }>
-      <div>Contact</div>
-    </Link>
+    <div className="nav-contact" onClick={ toggleContact }>Contact</div>
 
   </nav>
 )

@@ -14,3 +14,33 @@
 .noscroll {
   overflow: hidden;
 }
+
+.popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  background-color: #177673;
+  border: 1px solid black;
+  box-shadow: 3px 3px 10px 0px black;
+  z-index: 99999;
+  visibility: hidden;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.disable-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(black, 0.6);
+  z-index: 9999;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.popup-show {
+  visibility: visible;
+  opacity: 1;
+}

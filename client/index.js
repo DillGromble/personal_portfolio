@@ -6,24 +6,23 @@ import store from './store'
 
 import Main from './Main'
 import Home from './Home/Home'
+import AllProjectsContainer from './Projects/AllProjectsContainer'
 
-function hashLinkScroll() {
-  const { hash } = window.location
-  if (hash !== '') {
-    setTimeout(() => {
-      const id = hash.replace('#', '')
-      const element = document.getElementById(id)
-      if (element) element.scrollIntoView({ behavior: 'smooth' })
-    }, 0)
-  }
-}
+import { getAllProjects } from './reducers'
+
+
+const fetchProjects = () => store.dispatch(getAllProjects())
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Router history={browserHistory} onUpdate={hashLinkScroll}>
-      <Route path="/" component={Main}>
+  <Provider store={ store }>
+    <Router history={ browserHistory } >
+      <Route path="/" component={ Main }>
         <IndexRedirect to="/home" />
-        <Route path="/home" component={Home} />
+        <Route path="/home" component={ Home } />
+        <Route path="/projects"
+          component={ AllProjectsContainer }
+          onEnter={ fetchProjects }
+        />
       </Route>
     </Router>
   </Provider>,

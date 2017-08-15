@@ -25,15 +25,14 @@ const createApp = () => app
     res.status(err.status || 500).send(err.message || 'Internal server error.')
   })
 
-
 const listenUp = () =>
   app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
 
 
 if (require.main === module) {
   db.sync()
-    .then(createApp)
-    .then(listenUp)
+  .then(createApp)
+  .then(listenUp)
 }
 else {
   createApp(app)
