@@ -1,12 +1,23 @@
 .carousel-frame {
   grid-column: 2;
   grid-row: 2;
-  background-color: black;
   height: 220px;
   width: 400px;
 }
 
-.carousel-frame > img {
+.img-frame {
+  height: 154px;
+  width: 280px;
+
+}
+
+.img-frame > img {
   max-height: 100%;
   max-width: 100%;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

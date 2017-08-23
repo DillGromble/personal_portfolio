@@ -2,29 +2,20 @@ import React from 'react'
 
 import './carousel.scss'
 
-const images = [
-  'assets/Technologies/express.png',
-  'assets/Technologies/node.png',
-  'assets/Technologies/phaser.png',
-  'assets/Technologies/postgresql.png',
-  'assets/Technologies/react.png',
-  'assets/Technologies/redux.png',
-  'assets/Technologies/socketio.png'
-]
 
 class Carousel extends React.Component {
 
   constructor(props) {
     super(props)
-
+    console.log('carousel props', props)
     this.state = {
-      images: images,
+      images: props.images,
       imgIdx: 0,
     }
   }
 
   componentDidMount() {
-    this.intervalId = setInterval(this.nextImage.bind(this), 1000)
+    this.intervalId = setInterval(this.nextImage.bind(this), 1750)
   }
 
   componentWillUnmount() {
@@ -33,7 +24,7 @@ class Carousel extends React.Component {
 
   nextImage() {
     const idx = this.state.imgIdx
-    const next = idx === this.state.images.length ? 0 : idx + 1
+    const next = idx === this.state.images.length - 1 ? 0 : idx + 1
     this.setState({ imgIdx: next })
   }
 
@@ -41,8 +32,10 @@ class Carousel extends React.Component {
     const idx = this.state.imgIdx
 
     return (
-      <div className="carousel-frame">
-        <img src={ this.state.images[idx] } />
+      <div className="carousel-frame flex-center">
+        <div className="img-frame flex-center" >
+          <img src={`assets/Technologies/${this.state.images[idx]}.png`} />
+        </div>
       </div>
     )
   }

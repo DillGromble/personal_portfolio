@@ -36,7 +36,9 @@ module.exports = props => {
               title="Visit"
             />
           </div>
-          <Carousel />
+          {
+            props.project.technologies && <Carousel images={props.project.technologies} />
+          }
         </section>
       </div>
     </div>

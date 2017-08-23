@@ -5,12 +5,12 @@ export default {
     clearTimeout(this.timer)
   },
 
-  scrollTo: function(id, callback) {
+  scrollTo: function(id) {
     const settings = {
       duration: 1000,
       easing: {
         outQuint: function(x, t, b, c, d) {
-          return c * ((t = t / d - 1) * t * t * t * t + 1) + b
+          return (c * ((t = t / d - 1) * t * t * t * t + 1) + b)
         }
       }
     }
@@ -56,10 +56,6 @@ export default {
 
       if (percentage > 1) {
         clearTimeout(this.timer)
-
-        if (callback) {
-          callback()
-        }
       } else {
         yScroll = settings.easing.outQuint(
           0,
