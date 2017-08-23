@@ -1,9 +1,10 @@
 import React from 'react'
 
 import ProjectLink from '../Contact/SocialLink'
+import Carousel from './Carousel/Carousel'
 
 module.exports = props => {
-  console.log(props)
+
   return (
     <div className={`disable-bg ${props.poppedUp}`}>
       <div className={`popup project-popup ${props.poppedUp}`}>
@@ -35,7 +36,7 @@ module.exports = props => {
               title="Visit"
             />
           </div>
-
+          <Carousel />
         </section>
       </div>
     </div>

@@ -1,0 +1,12 @@
+.carousel-frame {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: black;
+  height: 220px;
+  width: 400px;
+}
+
+.carousel-frame > img {
+  max-height: 100%;
+  max-width: 100%;
+}
