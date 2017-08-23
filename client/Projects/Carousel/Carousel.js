@@ -24,15 +24,17 @@ class Carousel extends React.Component {
   }
 
   componentDidMount() {
-    this.intervalId = setInterval(() => {
-      this.setState({
-        imgIdx: this.state.imgIdx + 1,
-      })
-    }, 2000)
+    this.intervalId = setInterval(this.nextImage.bind(this), 1000)
   }
 
   componentWillUnmount() {
     clearInterval(this.intervalId)
+  }
+
+  nextImage() {
+    const idx = this.state.imgIdx
+    const next = idx === this.state.images.length ? 0 : idx + 1
+    this.setState({ imgIdx: next })
   }
 
   render() {
