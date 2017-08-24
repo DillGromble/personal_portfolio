@@ -7,11 +7,7 @@ class Carousel extends React.Component {
 
   constructor(props) {
     super(props)
-    console.log('carousel props', props)
-    this.state = {
-      images: props.images,
-      imgIdx: 0,
-    }
+    this.state = { images: props.images }
   }
 
   componentDidMount() {
@@ -23,23 +19,18 @@ class Carousel extends React.Component {
   }
 
   nextImage() {
-    const idx = this.state.imgIdx
-    const next = idx === this.state.images.length - 1 ? 0 : idx + 1
-    this.setState({ imgIdx: next })
+    this.setState({ images: [...this.state.images.slice(1), this.state.images[0]] })
   }
 
   render() {
-    const idx = this.state.imgIdx
-
     return (
       <div className="carousel-frame flex-center">
-        <div className="img-frame flex-center" >
-          <img src={`assets/Technologies/${this.state.images[idx]}.png`} />
-        </div>
+        <img src={`assets/Technologies/${this.state.images[0]}.png`} />
+        <img src={`assets/Technologies/${this.state.images[1]}.png`} />
+        <img src={`assets/Technologies/${this.state.images[2]}.png`} />
       </div>
     )
   }
 }
-
 
 export default Carousel

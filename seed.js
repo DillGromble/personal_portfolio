@@ -17,7 +17,7 @@ const projects = [
     start_date: new Date(),
     completed: new Date(),
     description: 'Lumber Jack\'s CTS is a top-down real-time online multiplayer game for 4 players. This was a Hackathon project while I was at Fullstack Academy which won the ‘Nerd Cred’ award for most technical problems solved in a short time due to the complications with managing state and latency across the players.',
-    technologies: ['phaser', 'socket', 'express'],
+    technologies: ['phaser', 'socket', 'express', 'node'],
     github_repo: 'https://github.com/DillGromble/LumberJacksCTS',
     img: 'assets/Projects/lumber-jacks.png',
     deployment: 'https://lumber-jacks-cts.herokuapp.com/'

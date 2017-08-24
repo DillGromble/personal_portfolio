@@ -5,19 +5,14 @@
   width: 400px;
 }
 
-.img-frame {
-  height: 154px;
-  width: 280px;
 
-}
-
-.img-frame > img {
-  max-height: 100%;
-  max-width: 100%;
+.carousel-frame > img {
+  max-height: 30%;
+  max-width: 30%;
 }
 
 .flex-center {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
