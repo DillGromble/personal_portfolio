@@ -39,7 +39,7 @@ class AllProjectsContainer extends React.Component {
           {
             this.props.allProjects && this.props.allProjects.map(proj =>
               <AllProjectsComponent
-                key={proj.id}
+                key={ proj.id }
                 { ...proj }
                 togglePopup={ togglePopup }
               />
@@ -47,8 +47,9 @@ class AllProjectsContainer extends React.Component {
           }
         </div>
         <ProjectPopup
-          poppedUp={this.state.showPopup ? 'popup-show' : ''}
+          poppedUp={ this.state.showPopup ? 'popup-show' : '' }
           exit={ togglePopup }
+          project={ this.state.selectedProject }
         />
       </div>
     )

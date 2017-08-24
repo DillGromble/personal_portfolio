@@ -39,8 +39,4 @@ class Main extends React.Component {
   }
 }
 
-const mapState = state => ({
-  name: 'Josh'
-})
-
-export default connect(mapState)(Main)
+export default Main

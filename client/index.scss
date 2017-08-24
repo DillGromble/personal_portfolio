@@ -11,6 +11,9 @@
   font-family: 'Cabin', sans-serif;
 }
 
+
+//    V--popups--V
+
 .noscroll {
   overflow: hidden;
 }
@@ -43,4 +46,14 @@
 .popup-show {
   visibility: visible;
   opacity: 1;
+}
+
+.exit-btn {
+  height: 24px;
+  width: 24px;
+  margin: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer; cursor: hand;
 }
