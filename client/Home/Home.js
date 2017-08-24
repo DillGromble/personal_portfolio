@@ -37,6 +37,9 @@ const Home = () =>
       <p>
         I attended a highly selective coding bootcamp based in NYC called Fullstack Academy.  There I learned fundamental computer science and algorithms, full stack JavaScript including Node, Express, Postgres, Sequelize, React, and Redux (to name only a few), as well as CSS(Sass), HTML5, and build tools.  However, the most important thing we were taught was how to be passionate, life long learners who needed nothing but an idea and some documentation to build anything.
       </p>
+      <p>
+        I'm currently actively seeking Software Engineering or Web Development roles, preferably that tackle difficult issues and cover a wide variety of technologies.  Taking on new languages, technologies and paradigms has become a hobby of mine, and I would love to spend my working hours doing the same!
+      </p>
     </section>
   </div>
 

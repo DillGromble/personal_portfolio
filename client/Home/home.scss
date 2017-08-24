@@ -114,7 +114,7 @@
     text-indent: 2.5em;
   }
 
-  & :last-child {
+  & :not(:first-child) {
     margin-top: 3em;
   }
 }
