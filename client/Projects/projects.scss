@@ -110,3 +110,14 @@
     height: 220px;
   }
 }
+
+.built-with-header {
+  grid-column: 2;
+  grid-row: 2;
+  z-index: 1;
+  height: 10px;
+  font-size: 22px;
+  font-weight: 100;
+  text-decoration: underline;
+  margin-top: 28px;
+}

@@ -36,6 +36,7 @@ module.exports = props => {
               title="Visit"
             />
           </div>
+          <h3 className="built-with-header">Built with:</h3>
           {
             props.project.technologies && <Carousel images={props.project.technologies} />
           }
