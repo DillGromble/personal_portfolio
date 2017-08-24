@@ -6,6 +6,9 @@
   justify-content: space-around;
   border-bottom: 1px solid black;
   background-color: #165d5b;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
 }
 
 .navbox a {

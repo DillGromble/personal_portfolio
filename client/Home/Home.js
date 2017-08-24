@@ -29,6 +29,18 @@ const Home = () =>
         <img className="techs-logos python" src="assets/python-logo.png" />
       </div>
     </section>
+
+    <section className="bio-area">
+      <p>
+        After many years working in inventory auditing and consulting for bars and restaurants, I found that the most enjoyable thing for me was setting up or debugging my company’s complex software.  This was a wakeup call for me to reconnect with my long-lost passion for coding (in highschool I loved playing with Q-basic and TI-Assembly).  I started again as a hobbyist with Python and immediately wondered why I ever stopped.  I soon decided to make a career change, and it has been the most gratifying decision I've made to date.
+      </p>
+      <p>
+        I attended a highly selective coding bootcamp based in NYC called Fullstack Academy.  There I learned fundamental computer science and algorithms, full stack JavaScript including Node, Express, Postgres, Sequelize, React, and Redux (to name only a few), as well as CSS(Sass), HTML5, and build tools.  However, the most important thing we were taught was how to be passionate, life long learners who needed nothing but an idea and some documentation to build anything.
+      </p>
+      <p>
+        I'm currently actively seeking Software Engineering or Web Development roles, preferably that tackle difficult issues and cover a wide variety of technologies.  Taking on new languages, technologies and paradigms has become a hobby of mine, and I would love to spend my working hours doing the same!
+      </p>
+    </section>
   </div>
 
 export default Home
