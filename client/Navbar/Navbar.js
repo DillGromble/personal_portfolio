@@ -14,14 +14,6 @@ const Navbar = ({ toggleContact }) => (
       <div>Projects</div>
     </Link>
 
-    <Link to="/algotorials">
-      <div>Algotorials</div>
-    </Link>
-
-    <Link to="/blog">
-      <div>Blog</div>
-    </Link>
-
     <div className="nav-contact" onClick={ toggleContact }>Contact</div>
 
   </nav>
@@ -30,3 +22,10 @@ const Navbar = ({ toggleContact }) => (
 
 export default Navbar
 
+// <Link to="/algotorials">
+//    <div>Algotorials</div>
+// </Link>
+
+// <Link to="/blog">
+//    <div>Blog</div>
+// </Link>
