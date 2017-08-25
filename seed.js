@@ -3,6 +3,15 @@ const Projects = require('./server/db/models/projects')
 
 const projects = [
     {
+    title: 'Portfolio',
+    start_date: new Date(),
+    completed: new Date(),
+    description: 'This is my portfolio, and was an opportunity I took to get aquanted with CSS and HTML more closely.  My education at Fullstack heavily favored computer science fundamentals and concepts like state management in larger applications.  I took this as a chance to get close with CSS and Sass.',
+    technologies: ['node', 'express', 'sequelize', 'postgres', 'react', 'redux', 'sass'],
+    github_repo: 'https://github.com/DillGromble/personal_portfolio',
+    img: 'assets/Projects/portfolio.png',
+    deployment: 'https://josh-white.herokuapp.com'
+  }, {
     title: 'Escape Hatch',
     start_date: new Date(),
     completed: new Date(),
