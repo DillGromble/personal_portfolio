@@ -25,6 +25,11 @@ class AllProjectsContainer extends React.Component {
     })
   }
 
+  componentDidUpdate() {
+    const bodyState = this.state.showPopup ? 'hidden' : ''
+    document.body.style.overflow = bodyState
+  }
+
   render() {
     const togglePopup = this.togglePopup.bind(this)
 
