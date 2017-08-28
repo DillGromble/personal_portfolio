@@ -7,7 +7,10 @@ class Carousel extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = { images: props.images }
+    this.state = {
+      images: props.images,
+      currentlyShown: [0, 1, 2]
+    }
   }
 
   componentDidMount() {
@@ -19,15 +22,24 @@ class Carousel extends React.Component {
   }
 
   nextImage() {
-    this.setState({ images: [...this.state.images.slice(1), this.state.images[0]] })
+    const nextGroup = this.state.currentlyShown.map(idx => {
+      return (idx === this.state.images.length - 1) ? 0 : idx + 1
+    })
+    this.setState({ currentlyShown: nextGroup })
   }
 
   render() {
     return (
       <div className="carousel-frame flex-center">
-        <img src={`assets/Technologies/${this.state.images[0]}.png`} />
-        <img src={`assets/Technologies/${this.state.images[1]}.png`} />
-        <img src={`assets/Technologies/${this.state.images[2]}.png`} />
+        {
+          this.state.images.map((image, idx) => (
+            <img
+              key={image}
+              className={this.state.currentlyShown.includes(idx) ? '' : 'noShow'}
+              src={`assets/Technologies/${image}.png`}
+            />
+          ))
+        }
       </div>
     )
   }

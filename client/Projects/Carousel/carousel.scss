@@ -9,10 +9,15 @@
 .carousel-frame > img {
   max-height: 30%;
   max-width: 30%;
+  margin: 0 10px;
 }
 
 .flex-center {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.noShow {
+  display: none;
 }
