@@ -29,13 +29,16 @@ class Carousel extends React.Component {
   }
 
   render() {
+    const currentlyShown = this.state.currentlyShown
+
     return (
       <div className="carousel-frame flex-center">
         {
           this.state.images.map((image, idx) => (
             <img
               key={image}
-              className={this.state.currentlyShown.includes(idx) ? '' : 'noShow'}
+              className={currentlyShown.includes(idx) ? '' : 'noShow'}
+              style={{ order: idx < currentlyShown[0] ? 1 : 0 }}
               src={`assets/Technologies/${image}.png`}
             />
           ))
